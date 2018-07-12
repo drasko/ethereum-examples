@@ -14,5 +14,5 @@ abigen --abi example.abi --bin example.bin --type Example --pkg main --out examp
 ### Geth
 For deployment with `geth` refer to [this wiki article](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts).
 
-### Ganash
-For deployment on Ganash simulator consult [this issue](https://github.com/trufflesuite/ganache-cli/issues/555).
+### Ganache
+For deployment on Ganache simulator consult [this issue](https://github.com/trufflesuite/ganache-cli/issues/555).
