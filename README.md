@@ -5,7 +5,7 @@ This repo holds various Ethereum examples and PoCs.
 Steps to generate go functions for interaction and deployment of Smart Contracts:
 
 ```
-vyper -f abi example.vy > example.abi
+vyper -f bytecode example.vy > example.bin
 vyper -f json example.vy > example.abi
 abigen --abi example.abi --bin example.bin --type Example --pkg main --out example.go
 ```
@@ -16,3 +16,8 @@ For deployment with `geth` refer to [this wiki article](https://github.com/ether
 
 ### Ganache
 For deployment on Ganache simulator consult [this issue](https://github.com/trufflesuite/ganache-cli/issues/555).
+
+### Run
+```
+go run main.go hello.go
+```
