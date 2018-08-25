@@ -43,6 +43,9 @@ func main() {
 		}
 		fmt.Println("Hello:", msg)
 
-		hello.Increment(&bind.TransactOpts{})
+		_, err2 := hello.Increment(auth)
+		if err2 != nil {
+			log.Fatalf("Increment() failed: %v", err2)
+		}
 	}
 }
